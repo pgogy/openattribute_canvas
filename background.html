@@ -1,0 +1,21 @@
+<script type="text/javascript">
+
+	var picture_src = "";
+	var license_value = "";
+
+	chrome.extension.onRequest.addListener(
+  
+		function(request, sender, sendResponse) {	
+			
+			picture_src = request.src;
+			license_value = request.license;
+			
+			curr_tab=sender.tab.id;
+		
+			chrome.pageAction.show(sender.tab.id);
+		
+		}     
+		
+	);
+         
+</script>
