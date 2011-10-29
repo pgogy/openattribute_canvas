@@ -5,19 +5,18 @@
 	  "matches": ["<all_urls>"],
 	  "run_at": "document_idle"
    } ],
-   "default_locale": "en_US",
    "icons": {
       "128": "icon.png"
    },
-   "name": "Picture Canvas swap",
+   "name": "Open Attribute Picture Augment",
    "page_action": {
       "default_icon": "icon.png",
-	  "default_title": "Get Attribution Info (RDFa) from a page to allow for attributing materials",
+	  "default_title": "Automatically add attribution for licensed pictures",
       "popup": "popup.html"
    },
    "permissions": [ "tabs",
    					"<all_urls>",
 					"http://*/"
 				  ],
-   "version" : "0.6"
+   "version" : "0.1"
 }

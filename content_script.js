@@ -287,7 +287,8 @@ while (n) {
 			}
 								
 			var new_p_node = document.createElement("P");	
-			new_p_node.innerHTML = "click for pic";
+			new_p_node.innerHTML = "Click to attribute";
+			new_p_node.style.cursor = "pointer";
 			new_p_node.path = n.src;
 			new_p_node.onclick = function(){
 				chrome.extension.sendRequest({action: "picture", src: this.path, license:license_value});
